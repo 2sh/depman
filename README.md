@@ -1,7 +1,7 @@
 # Dependency Manager
 This JavaScript library provides a manager with which the components within a dependency tree can be run asynchronously.
 
-##Defining components
+## Defining components
 An array for each component contains the component's name, function and array of dependencies. Components for which the dependency array is not specified or left empty are run first.
 ```
 var components =
@@ -17,7 +17,7 @@ If a component is to report back on the completion of asynchronous tasks such as
 
 If their dependencies are met, components will be run in the array order. Keeping components containing Ajax or other asynchronous waiting tasks at the start of the components array allows other components to run in the meantime.
 
-##Running the manager
+## Running the manager
 The dependency manager takes the array of components, a run completion callback and an error callback as its arguments.
 
 The following example shows how the components can be run repeatedly with a 30 second wait in between runs:
